@@ -37,7 +37,7 @@
 						class="dropdown-item" href="${pageContext.request.contextPath}/ctl/recruiter/search"> Recruiter List</a>
 				</div></li>
 			<li class="nav-item "><a class="nav-link"
-				href="<c:url value="/ctl/user/search"/>">User List</a></li>
+				href="<c:url value="/ctl/user/search"/>">Students List</a></li>
 			<%
 				} else if (userBean.getRoleId() == 2) {
 			%>
@@ -84,8 +84,7 @@
 		%>
 		
 	
-			<li class="nav-item dropdown"><a
-				class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown"
+			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown"
 				role="button" data-toggle="dropdown" aria-haspopup="true"
 				aria-expanded="false">Hi, <img width="30px" height="30px" src="${pageContext.request.contextPath}/getImage/<c:out value="<%=userBean.getId()%>"/>"> <%=userBean.getFirstName()%></a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">

@@ -40,8 +40,7 @@ public class ApplyJobDAOImpl implements ApplyJobDAOInt {
 	@Override
 	public void delete(ApplyJobDTO dto) {
 		log.info("ApplyJobDAOImpl Delete method Start");
-		Session session = entityManager.unwrap(Session.class);
-		session.delete(dto);
+		entityManager.remove(entityManager.contains(dto) ? dto : entityManager.merge(dto));
 		log.info("ApplyJobDAOImpl Delete method End");
 
 	}

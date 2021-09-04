@@ -35,8 +35,7 @@ public class EducationDAOImpl implements EducationDAOInt {
 	@Override
 	public void delete(EducationDTO dto) {
 		log.info("EducationDAOImpl Delete method Start");
-		Session session = entityManager.unwrap(Session.class);
-		session.delete(dto);
+		entityManager.remove(entityManager.contains(dto) ? dto : entityManager.merge(dto));
 		log.info("EducationDAOImpl Delete method End");
 
 	}

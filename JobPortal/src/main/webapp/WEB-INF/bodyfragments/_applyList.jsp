@@ -108,7 +108,7 @@
 				<td><c:out value="${ap.companyName}"/></td>
 				<td><c:out value="${ap.userName}"/></td>
 				<td><c:out value="${ap.apDate}"/></td>
-				<td><a target="blank" tabindex="-1" href="/JobPortal/ctl/apply/getFile/<c:out value="${ap.id}"/>">${ap.fileName}</a></td>
+				<td><a target="blank" href="/JobPortal/ctl/apply/getFile/<c:out value="${ap.id}"/>">${ap.fileName}</a></td>
 			</tr>
 	</c:forEach>
 

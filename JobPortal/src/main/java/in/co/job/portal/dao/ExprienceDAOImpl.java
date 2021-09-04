@@ -35,8 +35,7 @@ public class ExprienceDAOImpl implements ExprienceDAOInt {
 	@Override
 	public void delete(ExprienceDTO dto) {
 		log.info("ExprienceDAOImpl Delete method Start");
-		Session session = entityManager.unwrap(Session.class);
-		session.delete(dto);
+		entityManager.remove(entityManager.contains(dto) ? dto : entityManager.merge(dto));
 		log.info("ExprienceDAOImpl Delete method End");
 
 	}

@@ -17,10 +17,7 @@ public class JobPortalIntercepter implements HandlerInterceptor {
 		HttpSession session = request.getSession();
         if (session.getAttribute("user") == null) {
         	
-      
-        	/*Cookie cookie= WebUtils.getCookie(request, "org.springframework.web.servlet.i18n.CookieLocaleResolver.LOCALE");
-        	
-        	String locale= cookie.getValue();*/
+ 
         	
         	
         	

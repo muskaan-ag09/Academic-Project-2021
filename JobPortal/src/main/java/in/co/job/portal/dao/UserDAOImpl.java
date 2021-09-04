@@ -39,8 +39,7 @@ public class UserDAOImpl implements UserDAOInt {
 	@Override
 	public void delete(UserDTO dto) {
 		log.info("UserDAOImpl Delete method Start");
-		Session session = entityManager.unwrap(Session.class);
-		session.delete(dto);
+		entityManager.remove(entityManager.contains(dto) ? dto : entityManager.merge(dto));
 		log.info("UserDAOImpl Delete method End");
 
 	}

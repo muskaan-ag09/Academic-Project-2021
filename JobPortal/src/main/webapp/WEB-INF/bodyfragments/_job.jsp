@@ -15,6 +15,7 @@
 <div class="col-md-8">
     <div class="form-area">  
        <sf:form method="post" action="${pageContext.request.contextPath}/ctl/job"  modelAttribute="form">
+       <sf:hidden path="id" />
         <br style="clear:both">
                     <h3 style="margin-bottom: 15px; text-align: left: ;">Job</h3>
                     <b><%@ include file="businessMessage.jsp"%></b>

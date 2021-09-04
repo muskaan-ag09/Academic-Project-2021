@@ -4,8 +4,8 @@
 <%@taglib uri="http://www.springframework.org/tags" prefix="s"%>
 <br>
 <nav aria-label="breadcrumb">
-	<ol class="breadcrumb primary-color">
-		<li class="breadcrumb-item"><a class="white-text" href="#">Home</a></li>
+	<ol class="breadcrumb bg-white text-dark">
+		<li class="breadcrumb-item"><a class="text-dark" href="#">Home</a></li>
 		<li class="breadcrumb-item active">Application</li>
 	</ol>
 </nav>
@@ -205,7 +205,7 @@
 
 						<input type="submit" name="operation"
 							class="btn btn-dark pull-right" value="Save">or<input
-							type="submit" name="operation" class="btn btn-primary pull-right"
+							type="submit" name="operation" class="btn btn-dark pull-right"
 							value="Reset">
 					</sf:form>
 				</div>

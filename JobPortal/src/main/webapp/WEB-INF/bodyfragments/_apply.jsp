@@ -75,7 +75,7 @@
 	</table>
 	<s:bind path="file">
 							<div class="form-group">
-							<label >Profile Picture:</label> 
+							<label >Upload Resume:</label> 
 								<sf:input type="file" path="${status.expression}" placeholder="Select Resume File"
 									class="form-control" />
 								<font color="red"><sf:errors path="${status.expression}" /></font>

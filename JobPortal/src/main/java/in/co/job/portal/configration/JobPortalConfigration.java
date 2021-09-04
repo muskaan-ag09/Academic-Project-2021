@@ -39,27 +39,6 @@ public class JobPortalConfigration {
 	
 	private @Autowired AutowireCapableBeanFactory beanFactory;
 
-	/*
-	 * @Bean public FilterRegistrationBean myFilter() { FilterRegistrationBean
-	 * registration = new FilterRegistrationBean(); Filter myFilter = new
-	 * MyFilter(); beanFactory.autowireBean(myFilter);
-	 * registration.setFilter(myFilter); return registration; }
-	 */
-
-	/*
-	 * @Bean public MultipartResolver multipartResolver() { return new
-	 * CommonsMultipartResolver(); }
-	 */
-	
-	/*
-	 * @Override public void addInterceptors(InterceptorRegistry registry) {
-	 * registry.addInterceptor(new LocaleChangeInterceptor());
-	 * registry.addInterceptor(new
-	 * ThemeChangeInterceptor()).addPathPatterns("/**").excludePathPatterns(
-	 * "/ctl/**");
-	 * 
-	 * // multiple urls (same is possible for `exludePathPatterns`) }
-	 */
 	
 	@Autowired
 	private JobPortalIntercepter intercepter;

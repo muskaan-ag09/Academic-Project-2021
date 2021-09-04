@@ -35,8 +35,7 @@ public class ApplicationDAOImpl implements ApplicationDAOInt {
 	@Override
 	public void delete(ApplicationDTO dto) {
 		log.info("ApplicationDAOImpl Delete method Start");
-		Session session = entityManager.unwrap(Session.class);
-		session.delete(dto);
+		entityManager.remove(entityManager.contains(dto) ? dto : entityManager.merge(dto));
 		log.info("ApplicationDAOImpl Delete method End");
 
 	}

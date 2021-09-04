@@ -136,6 +136,7 @@ public class JobForm extends BaseForm {
 	@Override
 	public BaseDTO getDto() {
 		JobDTO dto = new JobDTO();
+		dto.setId(id);
 		dto.setName(name);
 		dto.setCompanyName(companyName);
 		dto.setLanguage(language);
@@ -158,6 +159,7 @@ public class JobForm extends BaseForm {
 	@Override
 	public void populate(BaseDTO bDto) {
 		JobDTO dto = (JobDTO) bDto;
+		id=dto.getId();
 		name=dto.getName();
 		companyName=dto.getCompanyName();
 		language=dto.getLanguage();

@@ -119,12 +119,12 @@
 			<div class="input-group">
 				<input type="submit" name="operation"
 					<c:if test="${listsize== 0}">disabled="disabled"</c:if>
-					class="btn btn-primary" value="Delete">
+					class="btn btn-dark" value="Delete">
 			</div>
 		</div>
 		<div class="col">
 			<div class="input-group">
-				<input type="submit" name="operation" class="btn btn-primary"
+				<input type="submit" name="operation" class="btn btn-dark"
 					value="New">
 			</div>
 		</div> --%>

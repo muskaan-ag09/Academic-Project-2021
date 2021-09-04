@@ -96,7 +96,7 @@
 						</div>
 						</c:forEach>
 						<input type="submit" name="operation"
-							class="btn btn-dark pull-right" value="Add More">
+							class="btn btn-dark pull-right" value="AddMore">
 				<hr>
 						<div class="form-group">
 							<s:bind path="skill">
